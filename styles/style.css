@@ -1,0 +1,1049 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700&family=Ubuntu:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tourney&family=Zen+Tokyo+Zoo&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+.navbar {
+  background-color: crimson;
+  position: fixed;
+  font-family: "ubuntu", sans-serif, Verdana, Tahoma, Arial, Helvetica;
+  width: 100%;
+  padding: 1.5rem 0rem;
+  z-index: 3;
+}
+
+.navLinks a {
+  border: 1.8px solid crimson;
+  color: whitesmoke;
+  font-size: 1.7rem;
+  font-weight: 500;
+  margin-left: 2.5rem;
+  transition: color 0.3s ease;
+  padding: 1rem;
+  border-radius: 5px;
+}
+.navLinks a:hover {
+  transition: 0.7s ease;
+  border: 1.8px solid white;
+  color: white;
+}
+
+.x-twitter-svg {
+  filter: brightness(0) invert(1); /* Makes the image white */
+  height: 40px;
+  width: 36px;
+}
+.x-twitter-svg:hover {
+  filter: brightness(0);
+}
+
+.fa-x-twitter {
+  font-size: 20px;
+  height: 32px;
+}
+
+.navLinks {
+  list-style: none;
+  display: inline-block;
+}
+
+.navLogo a {
+  width: 20px;
+  position: relative;
+  top: 3px;
+  font-size: 3.5rem;
+  font-weight: 500;
+  color: whitesmoke;
+}
+
+.vgLogo {
+  width: 65px;
+  height: 35px;
+}
+
+.navbar .max-width {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.max-width {
+  max-width: 145rem;
+  padding: 0 8rem;
+  margin: auto;
+}
+
+.heroSection {
+  display: flex;
+  justify-content: space-between;
+}
+
+.socialIcons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.socialIcons i {
+  margin-right: 2rem;
+  margin-bottom: 1rem;
+  font-size: 3.5rem;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.socialIcons i:hover {
+  cursor: pointer;
+}
+
+.socialIcons a {
+  color: #fff;
+}
+
+.socialIcons a:visited {
+  color: #fff;
+}
+
+.fa-linkedin:hover {
+  color: #0e76a8;
+  transition: filter 0.3s ease;
+}
+
+.fa-github:hover {
+  color: #6e5494;
+  transition: filter 0.3s ease;
+}
+
+.fa-envelope:hover {
+  color: #f44336;
+  transition: filter 0.3s ease;
+}
+
+.fa-x-twitter:hover {
+  color: black;
+}
+
+.fa-envelope {
+  color: #fff;
+  transition: filter 0.3s ease;
+}
+
+.fa-instagram:hover {
+  color: #f58529;
+}
+
+.code-camp:hover {
+  color: #196400;
+}
+
+.burger-btn {
+  position: relative;
+  bottom: 3px;
+  border-style: none;
+  font-size: 3.6rem;
+  cursor: pointer;
+  display: none;
+  width: 30px;
+  height: 23px;
+  border-radius: 15px;
+}
+
+.home {
+  display: flex;
+  height: 100vh;
+  color: #fff;
+  min-height: 50rem;
+  font-family: "ubuntu", sans-serif, Verdana, Tahoma, Arial, Helvetica;
+  background-image: url("../images/city3.jpg");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.home .max-width {
+  width: 100%;
+  display: flex;
+}
+
+.text-1 {
+  font-size: 2.9rem;
+}
+
+.text-2 {
+  font-size: 5rem;
+  font-weight: 600;
+}
+
+.text-3 {
+  font-size: 2.9rem;
+  margin: 5px 0;
+}
+
+.text-3 span {
+  font-size: 2.9rem;
+  color: crimson;
+  font-weight: 600;
+}
+
+.viewWorkBtn {
+  display: inline-block;
+  background: crimson;
+  color: #fff;
+  font-size: 2.5rem;
+  padding: 12px 20px;
+  margin-top: 20px;
+  font-weight: 400;
+  border-radius: 5px;
+  border: 2px solid crimson;
+  opacity: 0.9;
+}
+.viewWorkBtn:hover {
+  border: 2px solid #fff;
+  transition: 0.3s ease-in-out;
+}
+
+.arrow {
+  margin-left: 1.4rem;
+  margin-top: 33rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.arrow span {
+  display: block;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 5px;
+  border-bottom: 5px solid white;
+  border-right: 5px solid white;
+  transform: rotate(45deg);
+  margin: -10px;
+}
+
+@media screen and (max-width: 991px) {
+  .max-width {
+    padding: 0 5rem;
+  }
+}
+@media screen and (max-width: 947px) {
+  .burger-btn {
+    display: block;
+    z-index: 3;
+    bottom: 1px;
+  }
+  .menu.show {
+    display: flex;
+    transition: all 1s ease;
+  }
+  .menu {
+    display: none;
+  }
+  .text-1 {
+    font-size: 2.5rem;
+  }
+  .text-2 {
+    font-size: 4.5rem;
+  }
+  .text-3 {
+    font-size: 2.5rem;
+  }
+  .text-3 span {
+    font-size: 2.5rem;
+  }
+  .viewWorkBtn {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 660px) {
+  .socialIcons i {
+    margin-right: 0rem;
+  }
+  .navLinks a {
+    margin: 0.5rem 0;
+    font-size: 1.7rem;
+  }
+  .max-width {
+    padding: 0 2.3rem;
+  }
+  .text-1 {
+    font-size: 2rem;
+  }
+  .text-2 {
+    font-size: 3.3rem;
+  }
+  .text-3 {
+    font-size: 2rem;
+  }
+  .text-3 span {
+    font-size: 2rem;
+  }
+  .viewWorkBtn {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (max-width: 470px) {
+  .navLinks a {
+    font-size: 1.5rem;
+  }
+  .max-width {
+    padding: 0 1.5rem;
+  }
+  .text-1 {
+    font-size: 2.2rem;
+  }
+  .text-2 {
+    font-size: 3rem;
+  }
+  .text-3 {
+    font-size: 2.1rem;
+  }
+  .text-3 span {
+    font-size: 2.1rem;
+  }
+  .viewWorkBtn {
+    font-size: 1.7rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  .arrow {
+    margin-left: 0.2rem;
+    margin-top: 29rem;
+  }
+  .navLinks a {
+    padding: 0.8rem;
+    font-size: 1.4rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .navLinks a {
+    font-size: 1.3rem;
+    padding: 0.7rem;
+  }
+  .text-3 {
+    font-size: 2rem;
+  }
+  .text-3 span {
+    font-size: 2rem;
+  }
+  .arrow {
+    margin-top: 25.5rem;
+  }
+}
+@media screen and (max-width: 390px) {
+  .navLinks a {
+    font-size: 1.1rem;
+    padding: 0.6rem;
+  }
+}
+@media screen and (max-width: 345px) {
+  .navLinks a {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+}
+.myRecentWorkHeader {
+  background-color: crimson;
+  font-size: 3rem;
+  letter-spacing: 0.1rem;
+  color: whitesmoke;
+  font-family: "ubuntu", sans-serif, Verdana, Tahoma, Arial, Helvetica;
+  font-weight: 400;
+  max-width: 28rem;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 4.5rem;
+  margin-top: 3rem;
+  padding-top: 0.2em;
+  padding-bottom: 0.3em;
+  border-radius: 5px;
+}
+
+main {
+  padding-top: 2rem;
+}
+
+.projectSection {
+  justify-content: center;
+  display: grid;
+  max-width: 165rem;
+  margin: auto;
+  grid-template-columns: 1fr;
+  grid-row-gap: 2rem;
+  margin-bottom: 6rem;
+}
+
+.macBookWrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 8rem;
+}
+
+.lapTopSectionWrapper {
+  width: 94%;
+  perspective: 1000rem;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.lapTopSectionWrapper img {
+  width: inherit;
+}
+
+.screenLoadingWrapper-1,
+.screenLoadingWrapper-2,
+.screenLoadingWrapper-3,
+.screenLoadingWrapper-4 {
+  position: absolute;
+  top: 5.3%;
+  width: 70%;
+  height: 88.5%;
+  z-index: -1;
+  background-size: cover;
+  opacity: 0;
+}
+
+.screenLoadingWrapper-1 {
+  position: absolute;
+  top: 5.3%;
+  width: 70%;
+  height: 88.5%;
+  background: url(../images/portfolio-website-01.png) center no-repeat;
+  z-index: -1;
+  background-size: cover;
+  opacity: 0;
+}
+
+.screenLoadingWrapper-2 {
+  position: absolute;
+  top: 5.3%;
+  width: 70%;
+  height: 88.5%;
+  background: url(../images/keynote-2.png) center no-repeat;
+  background-size: cover;
+  z-index: -1;
+  opacity: 0;
+}
+
+.screenLoadingWrapper-3 {
+  position: absolute;
+  top: 5.3%;
+  width: 70%;
+  height: 88.5%;
+  background: url(../images/rock-paper-scissor.png) center no-repeat;
+  background-size: cover;
+  z-index: -1;
+  opacity: 0;
+}
+
+.screenLoadingWrapper-4 {
+  position: absolute;
+  top: 5.3%;
+  width: 70%;
+  height: 88.5%;
+  background: url(../images/apple-clone.png) center no-repeat;
+  background-size: cover;
+  z-index: -1;
+  opacity: 0;
+}
+
+.macbook-info {
+  position: absolute;
+  top: 64%;
+  width: 25rem;
+  transition: ease-in-out 0.5s;
+  opacity: 0;
+}
+
+.btn-div {
+  margin: auto;
+  width: 22rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-btn {
+  border: 2px solid crimson;
+  padding: 0.4em 0.8rem;
+  border-radius: 0.5rem;
+  background-color: crimson;
+  opacity: 0.9;
+  color: whitesmoke;
+  font-family: "ubuntu", sans-serif, Verdana, Tahoma, Arial, Helvetica;
+  letter-spacing: 0.1rem;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.project-btn:hover {
+  color: crimson;
+  background-color: white;
+  transition-timing-function: ease-in-out;
+  transition: 0.5s;
+}
+
+.project-name {
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  font-family: "ubuntu", sans-serif, Verdana, Tahoma, Arial, Helvetica;
+  color: #fff;
+  font-weight: 400;
+}
+
+.blkScreenLoading {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.blkScreenLoading i {
+  font-size: 9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+  margin-bottom: 1.5rem;
+}
+
+.progress-bar {
+  width: 20rem;
+  height: 0.3rem;
+  background-color: #888;
+  border-radius: 5rem;
+  position: relative;
+}
+
+.progress-bar::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: white;
+}
+
+.macbook-img-1 {
+  transform: rotateX(-80deg);
+  transform-origin: bottom;
+}
+
+.change .macbook-img-1 {
+  transform: rotateX(0);
+  transition: transform 3s;
+}
+
+.change .progress-bar::after {
+  width: 100%;
+  transition: width 1s 2.3s;
+}
+
+.change .screen-loading {
+  opacity: 1;
+  transition: opacity 1s 1.2s;
+}
+
+.change .blkScreenLoading {
+  opacity: 0;
+  transition: 1s 3.7s;
+}
+
+.change .macbook-info {
+  opacity: 1;
+  transition: opacity 1s 4.6s;
+}
+
+@media (max-width: 1400px) {
+  .progress-bar {
+    width: 17rem;
+  }
+}
+@media (max-width: 1100px) {
+  .macBookWrapper {
+    flex-wrap: wrap;
+  }
+  .myRecentWorkHeader {
+    font-size: 2rem;
+    max-width: 20rem;
+  }
+  .progress-bar {
+    width: 16rem;
+  }
+}
+@media (max-width: 600px) {
+  .blkScreenLoading i {
+    font-size: 7.5rem;
+  }
+  .progress-bar {
+    width: 14rem;
+  }
+  .macbook-info {
+    top: 61%;
+  }
+  .project-btn {
+    font-size: 1.1rem;
+    border-radius: 0.4rem;
+    letter-spacing: 0rem;
+  }
+  .project-name {
+    font-size: 1.7rem;
+    font-weight: 400;
+  }
+  .btn-div {
+    width: 18rem;
+  }
+}
+@media (max-width: 475px) {
+  .macbook-info {
+    top: 60%;
+  }
+  .project-btn {
+    font-size: 1rem;
+    padding: 0.3em 0.7rem;
+  }
+  .project-name {
+    font-size: 1.6rem;
+  }
+  .btn-div {
+    width: 16rem;
+  }
+  .blkScreenLoading i {
+    font-size: 6.5rem;
+  }
+  .progress-bar {
+    width: 11rem;
+  }
+}
+@media (max-width: 400px) {
+  .macbook-info {
+    top: 57%;
+  }
+}
+@media (max-width: 350px) {
+  .macbook-info {
+    top: 55%;
+  }
+  .project-btn {
+    font-size: 0.9rem;
+    padding: 0.2em 0.6rem;
+  }
+  .btn-div {
+    width: 14.5rem;
+  }
+  .blkScreenLoading i {
+    font-size: 5.5rem;
+  }
+  .progress-bar {
+    width: 9rem;
+  }
+}
+@media (max-width: 300px) {
+  .macbook-info {
+    top: 50%;
+  }
+  .blkScreenLoading i {
+    font-size: 4.5rem;
+  }
+  .progress-bar {
+    width: 8rem;
+  }
+  .project-name {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 250px) {
+  .project-btn {
+    font-size: 0.8rem;
+    padding: 0.1em 0.5rem;
+  }
+  .btn-div {
+    width: 12.5rem;
+  }
+  .project-name {
+    font-size: 1.2rem;
+  }
+}
+.stackSection {
+  padding-top: 1.5rem;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 5rem;
+  padding-bottom: 5rem;
+  height: 50%;
+  background-color: black;
+  background-image: url("../images/keyboard.jpeg");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  background-size: cover;
+}
+
+.techStackImageContainer-JS {
+  border-radius: 5px;
+}
+
+.techStackHeader {
+  margin: auto;
+  max-width: 20rem;
+  font-size: 3rem;
+  padding: 0.5rem;
+  letter-spacing: 0.1rem;
+  border-radius: 5px;
+  margin-top: 1.5rem;
+  margin-bottom: 5rem;
+  background-color: crimson;
+  color: whitesmoke;
+  font-family: "ubuntu", sans-serif, Verdana, Tahoma, Arial, Helvetica;
+  font-weight: 400;
+}
+
+.techStackImage-JS {
+  border-radius: 10px;
+  width: 10rem;
+  margin-top: 0.9rem;
+}
+
+.techStackImage-JSVUE {
+  width: 12.8rem;
+  margin-top: 0.9rem;
+}
+
+.techStackImage {
+  width: 10rem;
+  margin-top: 0.9rem;
+}
+
+#sassImg {
+  width: 13rem;
+}
+
+.cardContainer h3 {
+  border-radius: 5px;
+  margin: auto;
+  width: 100%;
+  padding: 3px 3px;
+  letter-spacing: 0.5px;
+  font-family: "ubuntu", sans-serif, Verdana, Tahoma, Arial, Helvetica;
+  margin-top: 0.8rem;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.cardContainer .JavaScript {
+  font-size: 1.8rem;
+  color: yellow;
+  border: 2.5px solid yellow;
+}
+
+.cardContainer .typeScript {
+  font-size: 1.8rem;
+  color: #007acc;
+  border: 2.5px solid #007acc;
+}
+
+.cardContainer .react {
+  font-size: 1.8rem;
+  color: #61dbfb;
+  border: 2.5px solid #61dbfb;
+}
+
+.cardContainer .HTML {
+  font-size: 1.8rem;
+  width: 80%;
+  color: #e44d26;
+  border: 2.5px solid #e44d26;
+}
+
+.cardContainer .Git {
+  font-size: 1.8rem;
+  color: #e44d26;
+  border: 2.5px solid #e44d26;
+  width: 60%;
+}
+
+.cardContainer .CSS {
+  font-size: 1.8rem;
+  width: 70%;
+  color: #2970c7;
+  border: 2.5px solid #2970c7;
+}
+
+.cardContainer .SASS {
+  font-size: 1.8rem;
+  width: 60%;
+  color: #cf649a;
+  border: 2.5px solid #cf649a;
+}
+
+.cardContainer .BootStrap {
+  font-size: 1.8rem;
+  color: #563d7c;
+  border: 2.5px solid #563d7c;
+}
+
+.cardContainer .tailWind {
+  font-size: 1.8rem;
+  color: #49aeb3;
+  border: 2.5px solid #49aeb3;
+}
+
+.cardContainer .jQuery {
+  font-size: 1.8rem;
+  color: #0868ac;
+  border: 2.5px solid #0868ac;
+}
+
+.techStackContainer {
+  justify-content: center;
+  justify-items: center;
+  display: grid;
+  max-width: 92rem;
+  margin-left: auto;
+  margin-right: auto;
+  grid-template-columns: repeat(auto-fill, 22rem);
+  grid-column-gap: 1rem;
+  grid-row-gap: 5.5rem;
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 545px) {
+  .stackSection {
+    padding-bottom: 1rem;
+  }
+  .techStackContainer {
+    grid-row-gap: 1.5rem;
+    grid-column-gap: 0rem;
+    grid-template-columns: repeat(auto-fill, 18rem);
+  }
+}
+.aboutMeSection {
+  margin-top: 5rem;
+  font-family: "ubuntu", sans-serif, Verdana, Tahoma, Arial, Helvetica;
+  margin-bottom: 5.8rem;
+}
+
+.aboutMeSection .max-width {
+  max-width: 120rem;
+}
+
+.aboutMeSection .about-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.myImg {
+  width: 36%;
+  margin: auto;
+}
+
+.myImg img {
+  height: 35rem;
+  width: 38rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 80px;
+}
+
+.bioContainer {
+  width: 55%;
+}
+
+.bioContainer p {
+  margin-bottom: 2rem;
+  width: 58rem;
+  font-size: 1.7rem;
+  line-height: 2.5rem;
+  font-weight: 300;
+}
+
+.bioContainer p a {
+  font-size: 1.7rem;
+  border-bottom: 1px solid black;
+  color: black;
+}
+
+.bioParagraph {
+  font-size: 2rem;
+  text-align: justify;
+  line-height: 2.4rem;
+}
+
+.dev-design-container {
+  font-size: 2rem;
+  font-family: "ubuntu", sans-serif, Verdana, Tahoma, Arial, Helvetica;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+#spanOne,
+#spanTwo,
+#spanThree {
+  font-family: "Tourney", sans-serif;
+  font-size: 3.5rem;
+}
+
+#spanOne {
+  color: rgb(173, 20, 220);
+}
+
+#spanTwo {
+  color: rgb(25, 158, 25);
+}
+
+#spanThree {
+  color: dodgerblue;
+}
+
+.resumeBtn {
+  display: inline-block;
+  background: crimson;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 500;
+  padding: 1rem 1.8rem;
+  margin-top: 2rem;
+  border-radius: 5px;
+  letter-spacing: 0.1rem;
+  border: 2px solid crimson;
+  transition: all 0.3s ease;
+}
+.resumeBtn:hover {
+  color: crimson;
+  background: none;
+}
+
+.aboutMeHeader {
+  border-radius: 5px;
+  background-color: crimson;
+  max-width: 18rem;
+  margin: auto;
+  padding: 0.5rem;
+  color: whitesmoke;
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 6rem;
+  font-weight: 400;
+  font-family: "ubuntu", sans-serif, Verdana, Tahoma, Arial, Helvetica;
+}
+
+.bioContainer {
+  width: 55%;
+}
+
+#ampersand {
+  font-size: 1.8rem;
+  color: black;
+}
+
+@media (max-width: 1104px) {
+  .myImg img {
+    height: 30rem;
+    width: 30rem;
+  }
+  #spanOne,
+  #spanTwo,
+  #spanThree {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 947px) {
+  .myImg {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 6rem;
+  }
+  .bioContainer {
+    width: 100%;
+    margin: auto;
+  }
+}
+@media (max-width: 670px) {
+  .aboutMeHeader {
+    max-width: 18rem;
+    font-size: 3rem;
+  }
+}
+@media (max-width: 500px) {
+  .dev-design-container {
+    font-size: 2.1rem;
+  }
+}
+@media (max-width: 530px) {
+  #spanOne,
+  #spanTwo,
+  #spanThree {
+    font-size: 2.3rem;
+  }
+  #ampersand {
+    font-size: 1.3rem;
+    color: black;
+  }
+}
+footer {
+  font-size: 2rem;
+  font-family: "ubuntu", sans-serif, Verdana, Tahoma, Arial, Helvetica;
+  background: #111;
+  padding: 5px 23px;
+  color: #fff;
+  text-align: center;
+}
+
+.socialMediaLinks a {
+  font-size: 5rem;
+  color: white;
+}
+
+.footerHeader {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.socialMediaLinks {
+  padding-bottom: 0.5rem;
+  max-width: 25rem;
+  justify-content: space-around;
+  margin: auto;
+  display: flex;
+  text-align: center;
+}
+
+.x-twitter-svg-footer {
+  margin-top: 2rem;
+  filter: brightness(0) invert(1);
+  height: 30px;
+  width: 36px;
+}/*# sourceMappingURL=style.css.map */

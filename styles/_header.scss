@@ -1,0 +1,332 @@
+// ********NAV BAR SECTION********
+.navbar {
+  background-color: $main-color;
+  position: fixed;
+  font-family: $font-stack;
+  width: 100%;
+  padding: 1.5rem 0rem;
+  z-index: 3;
+}
+.navLinks a {
+  border: 1.8px solid $main-color;
+  color: whitesmoke;
+  font-size: 1.7rem;
+  font-weight: 500;
+  margin-left: 2.5rem;
+  transition: color 0.3s ease;
+  padding: 1rem;
+  border-radius: 5px;
+  &:hover {
+    transition: 0.7s ease;
+    border: 1.8px solid white;
+    color: white;
+  }
+}
+.x-twitter-svg {
+  filter: brightness(0) invert(1); /* Makes the image white */
+  height: 40px;
+  width: 36px;
+  // transition: filter 0.3s ease;
+  &:hover {
+    filter: brightness(0);
+  }
+}
+.fa-x-twitter {
+  font-size: 20px;
+  height: 32px;
+}
+.navLinks {
+  list-style: none;
+  display: inline-block;
+}
+.navLogo a {
+  width: 20px;
+  position: relative;
+  top: 3px;
+  font-size: 3.5rem;
+  font-weight: 500;
+  color: whitesmoke;
+}
+.vgLogo {
+  width: 65px;
+  height: 35px;
+}
+.navbar .max-width {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.max-width {
+  max-width: 145rem;
+  padding: 0 8rem;
+  margin: auto;
+}
+.heroSection {
+  display: flex;
+  justify-content: space-between;
+}
+// ********Social Icons SECTION********
+.socialIcons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 2rem;
+  // border: 1px solid red;
+}
+.socialIcons i {
+  // border: 1px red solid;
+  margin-right: 2rem;
+  margin-bottom: 1rem;
+  font-size: 3.5rem;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  &:hover {
+    cursor: pointer;
+  }
+}
+.socialIcons a {
+  color: #fff;
+}
+.socialIcons a:visited {
+  color: #fff;
+}
+.fa-linkedin:hover {
+  color: #0e76a8;
+  transition: filter 0.3s ease;
+}
+.fa-github:hover {
+  color: #6e5494;
+  transition: filter 0.3s ease;
+}
+.fa-envelope:hover {
+  color: #f44336;
+  transition: filter 0.3s ease;
+}
+.fa-x-twitter:hover {
+  color: black;
+}
+.fa-envelope {
+  color: #fff;
+  transition: filter 0.3s ease;
+}
+// .fa-x-twitter:hover {
+//   color: #fff;
+// }
+.fa-instagram:hover {
+  color: #f58529;
+}
+.code-camp:hover {
+  color: #196400;
+}
+
+// ********Social Icons SECTION********
+.burger-btn {
+  position: relative;
+  bottom: 3px;
+  border-style: none;
+  font-size: 3.6rem;
+  cursor: pointer;
+  display: none;
+  width: 30px;
+  height: 23px;
+  border-radius: 15px;
+}
+
+// ********NAV BAR SECTION********
+
+// ********Name ME SECTION********
+
+.home {
+  display: flex;
+  height: 100vh;
+  color: #fff;
+  min-height: 50rem;
+  font-family: $font-stack;
+  background-image: url("../images/city3.jpg");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.home .max-width {
+  width: 100%;
+  display: flex;
+}
+
+.text-1 {
+  font-size: 2.9rem;
+}
+.text-2 {
+  font-size: 5rem;
+  font-weight: 600;
+}
+.text-3 {
+  font-size: 2.9rem;
+  margin: 5px 0;
+}
+.text-3 span {
+  font-size: 2.9rem;
+  color: $main-color;
+  font-weight: 600;
+}
+.viewWorkBtn {
+  display: inline-block;
+  background: $main-color;
+  color: #fff;
+  font-size: 2.5rem;
+  padding: 12px 20px;
+  margin-top: 20px;
+  font-weight: 400;
+  border-radius: 5px;
+  border: 2px solid $main-color;
+  opacity: 0.9;
+  &:hover {
+    border: 2px solid #fff;
+    transition: 0.3s ease-in-out;
+  }
+}
+// Arrow Section
+.arrow {
+  margin-left: 1.4rem;
+  margin-top: 33rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.arrow span {
+  display: block;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 5px;
+  border-bottom: 5px solid white;
+  border-right: 5px solid white;
+  transform: rotate(45deg);
+  margin: -10px;
+}
+// ********WELCOME SECTION********
+@media screen and (max-width: 991px) {
+  .max-width {
+    padding: 0 5rem;
+  }
+}
+@media screen and (max-width: 947px) {
+  .burger-btn {
+    display: block;
+    z-index: 3;
+    bottom: 1px;
+  }
+  .menu.show {
+    display: flex;
+    transition: all 1s ease;
+  }
+  .menu {
+    display: none;
+  }
+  .text-1 {
+    font-size: 2.5rem;
+  }
+  .text-2 {
+    font-size: 4.5rem;
+  }
+  .text-3 {
+    font-size: 2.5rem;
+  }
+  .text-3 span {
+    font-size: 2.5rem;
+  }
+  .viewWorkBtn {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 660px) {
+  .socialIcons i {
+    margin-right: 0rem;
+  }
+  .navLinks a {
+    margin: 0.5rem 0;
+    font-size: 1.7rem;
+  }
+  .max-width {
+    padding: 0 2.3rem;
+  }
+  .text-1 {
+    font-size: 2rem;
+  }
+  .text-2 {
+    font-size: 3.3rem;
+  }
+  .text-3 {
+    font-size: 2rem;
+  }
+  .text-3 span {
+    font-size: 2rem;
+  }
+  .viewWorkBtn {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (max-width: 470px) {
+  .navLinks a {
+    font-size: 1.5rem;
+  }
+  .max-width {
+    padding: 0 1.5rem;
+  }
+  .text-1 {
+    font-size: 2.2rem;
+  }
+  .text-2 {
+    font-size: 3rem;
+  }
+  .text-3 {
+    font-size: 2.1rem;
+  }
+  .text-3 span {
+    font-size: 2.1rem;
+  }
+  .viewWorkBtn {
+    font-size: 1.7rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .arrow {
+    margin-left: 0.2rem;
+    margin-top: 29rem;
+  }
+  .navLinks a {
+    padding: 0.8rem;
+    font-size: 1.4rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .navLinks a {
+    font-size: 1.3rem;
+    padding: 0.7rem;
+  }
+  .text-3 {
+    font-size: 2rem;
+  }
+  .text-3 span {
+    font-size: 2rem;
+  }
+  .arrow {
+    margin-top: 25.5rem;
+  }
+}
+@media screen and (max-width: 390px) {
+  .navLinks a {
+    font-size: 1.1rem;
+    padding: 0.6rem;
+  }
+}
+@media screen and (max-width: 345px) {
+  .navLinks a {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+}

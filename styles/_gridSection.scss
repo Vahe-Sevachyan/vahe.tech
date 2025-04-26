@@ -1,0 +1,339 @@
+.myRecentWorkHeader {
+  // position: relative;
+  background-color: $main-color;
+  font-size: 3rem;
+  letter-spacing: 0.1rem;
+  color: whitesmoke;
+  font-family: $font-stack;
+  font-weight: 400;
+  max-width: 28rem;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 4.5rem;
+  margin-top: 3rem;
+  padding-top: 0.2em;
+  padding-bottom: 0.3em;
+  border-radius: 5px;
+}
+main {
+  // background-color: #101820;
+  padding-top: 2rem;
+}
+//project Section container
+.projectSection {
+  justify-content: center;
+  display: grid;
+  max-width: 165rem;
+  margin: auto;
+  grid-template-columns: 1fr;
+  grid-row-gap: 2rem;
+  margin-bottom: 6rem;
+}
+// Project item wrappers
+.macBookWrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 8rem;
+  // clip-path: polygon(68% 0, 100% 0, 100% 97%, 38% 100%, 0% 100%, 0 3%);
+}
+//project items
+.lapTopSectionWrapper {
+  width: 94%;
+  perspective: 1000rem;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.lapTopSectionWrapper img {
+  width: inherit;
+}
+//MacBook project img Screen
+.screenLoadingWrapper-1,
+.screenLoadingWrapper-2,
+.screenLoadingWrapper-3,
+.screenLoadingWrapper-4 {
+  position: absolute;
+  top: 5.3%;
+  width: 70%;
+  height: 88.5%;
+  z-index: -1;
+  background-size: cover;
+  opacity: 0;
+}
+.screenLoadingWrapper-1 {
+  position: absolute;
+  top: 5.3%;
+  width: 70%;
+  height: 88.5%;
+  background: url(../images/portfolio-website-01.png) center no-repeat;
+  z-index: -1;
+  background-size: cover;
+  opacity: 0;
+}
+.screenLoadingWrapper-2 {
+  position: absolute;
+  top: 5.3%;
+  width: 70%;
+  height: 88.5%;
+  background: url(../images/keynote-2.png) center no-repeat;
+  background-size: cover;
+  z-index: -1;
+  opacity: 0;
+}
+.screenLoadingWrapper-3 {
+  position: absolute;
+  top: 5.3%;
+  width: 70%;
+  height: 88.5%;
+  background: url(../images/rock-paper-scissor.png) center no-repeat;
+  background-size: cover;
+  z-index: -1;
+  opacity: 0;
+}
+.screenLoadingWrapper-4 {
+  position: absolute;
+  top: 5.3%;
+  width: 70%;
+  height: 88.5%;
+  background: url(../images/apple-clone.png) center no-repeat;
+  background-size: cover;
+  z-index: -1;
+  opacity: 0;
+}
+//MacBook project img Screen
+
+//project info section
+.macbook-info {
+  position: absolute;
+  top: 64%;
+  width: 25rem;
+  transition: ease-in-out 0.5s;
+  opacity: 0;
+}
+.btn-div {
+  margin: auto;
+  width: 22rem;
+  display: flex;
+  justify-content: space-between;
+}
+.project-btn {
+  border: 2px solid $main-color;
+  padding: 0.4em 0.8rem;
+  border-radius: 0.5rem;
+  background-color: $main-color;
+  opacity: 0.9;
+  color: whitesmoke;
+  font-family: $font-stack;
+  letter-spacing: 0.1rem;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+.project-btn:hover {
+  color: $main-color;
+  background-color: white;
+  transition-timing-function: ease-in-out;
+  transition: 0.5s;
+}
+//project title
+.project-name {
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  font-family: $font-stack;
+  color: #fff;
+  font-weight: 400;
+}
+
+//project info section
+
+///Mac Logo blkScreenLoading
+.blkScreenLoading {
+  // display: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.blkScreenLoading i {
+  font-size: 9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+  margin-bottom: 1.5rem;
+}
+.progress-bar {
+  width: 20rem;
+  height: 0.3rem;
+  background-color: #888;
+  border-radius: 5rem;
+  position: relative;
+}
+.progress-bar::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: white;
+}
+
+///Mac Logo section
+
+//screen down
+.macbook-img-1 {
+  transform: rotateX(-80deg);
+  transform-origin: bottom;
+}
+//screen rotating up
+.change .macbook-img-1 {
+  transform: rotateX(0);
+  transition: transform 3s;
+}
+//loading progress bar
+.change .progress-bar::after {
+  width: 100%;
+  transition: width 1s 2.3s;
+}
+//black background loading screen
+.change .screen-loading {
+  opacity: 1;
+  transition: opacity 1s 1.2s;
+}
+//hide maclogo
+.change .blkScreenLoading {
+  opacity: 0;
+  transition: 1s 3.7s;
+}
+//project info display
+.change .macbook-info {
+  opacity: 1;
+  transition: opacity 1s 4.6s;
+}
+@media (max-width: 1400px) {
+  .progress-bar {
+    width: 17rem;
+  }
+}
+@media (max-width: 1100px) {
+  .macBookWrapper {
+    flex-wrap: wrap;
+  }
+  .myRecentWorkHeader {
+    font-size: 2rem;
+    max-width: 20rem;
+  }
+  .progress-bar {
+    width: 16rem;
+  }
+  // .project-btn {
+  //   letter-spacing: 0rem;
+  // }
+}
+@media (max-width: 600px) {
+  .blkScreenLoading i {
+    font-size: 7.5rem;
+  }
+  .progress-bar {
+    width: 14rem;
+  }
+  .macbook-info {
+    top: 61%;
+  }
+  .project-btn {
+    font-size: 1.1rem;
+    border-radius: 0.4rem;
+    letter-spacing: 0rem;
+  }
+  .project-name {
+    font-size: 1.7rem;
+    font-weight: 400;
+  }
+  .btn-div {
+    width: 18rem;
+  }
+}
+@media (max-width: 475px) {
+  .macbook-info {
+    top: 60%;
+  }
+  .project-btn {
+    font-size: 1rem;
+    padding: 0.3em 0.7rem;
+  }
+  .project-name {
+    font-size: 1.6rem;
+  }
+  .btn-div {
+    width: 16rem;
+  }
+  .blkScreenLoading i {
+    font-size: 6.5rem;
+  }
+  .progress-bar {
+    width: 11rem;
+  }
+}
+@media (max-width: 400px) {
+  .macbook-info {
+    top: 57%;
+  }
+}
+@media (max-width: 350px) {
+  .macbook-info {
+    top: 55%;
+  }
+  .project-btn {
+    font-size: 0.9rem;
+    padding: 0.2em 0.6rem;
+  }
+  .btn-div {
+    width: 14.5rem;
+  }
+  .blkScreenLoading i {
+    font-size: 5.5rem;
+  }
+  .progress-bar {
+    width: 9rem;
+  }
+}
+@media (max-width: 300px) {
+  .macbook-info {
+    top: 50%;
+  }
+  .blkScreenLoading i {
+    font-size: 4.5rem;
+  }
+  .progress-bar {
+    width: 8rem;
+  }
+  .project-name {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 250px) {
+  .project-btn {
+    font-size: 0.8rem;
+    padding: 0.1em 0.5rem;
+  }
+  .btn-div {
+    width: 12.5rem;
+  }
+  .project-name {
+    font-size: 1.2rem;
+  }
+}
