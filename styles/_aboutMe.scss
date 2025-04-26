@@ -18,6 +18,9 @@
 .myImg {
   width: 36%;
 }
+#mailto {
+  font-size: 1.5rem;
+}
 .myImg img {
   height: 35rem;
   width: 38rem;
@@ -97,9 +100,7 @@
   font-weight: 400;
   font-family: $font-stack;
 }
-.bioContainer {
-  // width: 55%;
-}
+
 #ampersand {
   font-size: 1.8rem;
   color: black;
@@ -117,17 +118,12 @@
     max-width: 100%;
   }
   .aboutMeSection .about-content {
-    // display: flex;
-    // justify-content: center;
-    // flex-direction: row;
-    width: 95%;
+    width: 100%;
     border: 1px solid rgb(59, 213, 64);
-  }
-  .myImg {
-    // margin-bottom: 7px;
+    // padding: 5px;
   }
   #mailto {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
   .aboutMeSection {
     max-width: 100%;
@@ -144,28 +140,29 @@
 
 @media (max-width: 947px) {
   #mailto {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
   }
   .myImg img {
     height: 25rem;
     width: 25rem;
   }
   .aboutMeSection .about-content {
-    // width: 73rem;
     width: 100%;
   }
   .bioContainer p {
     font-size: 1.5rem;
   }
   .bioContainer {
-    // margin: 5px;
-    max-width: 100%;
+    // max-width: 100%;
   }
 }
 
 @media (max-width: 875px) {
   .aboutMeSection .about-content {
     flex-direction: column;
+  }
+  .bioContainer {
+    max-width: 100%;
   }
 }
 
@@ -177,10 +174,13 @@
   .bioContainer {
     max-width: 100%;
     // margin: 15px;
-    border: 1px solid red;
+    // border: 1px solid red;
     p {
       font-size: 1.3rem;
     }
+  }
+  #mailto {
+    font-size: 1.1rem;
   }
 }
 @media (max-width: 500px) {
