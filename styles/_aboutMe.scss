@@ -2,46 +2,33 @@
   margin-top: 5rem;
   font-family: $font-stack;
   margin-bottom: 5.8rem;
-  // border: 1px solid black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .aboutMeSection .max-width {
-  max-width: 120rem;
+  max-width: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  // border: 1px solid black;
 }
 .aboutMeSection .about-content {
   width: 105rem;
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
 }
 .myImg {
   width: 36%;
-  // margin-top: 15px;
-  // border: 1px solid red;
-  // margin: auto;
 }
 .myImg img {
   height: 35rem;
   width: 38rem;
   object-fit: cover;
   border-radius: 6px;
-  // margin-bottom: 80px;
 }
-
 .bioContainer {
   max-width: 55%;
 }
-
 .bioContainer p {
   margin-bottom: 1rem;
-  // width: 55rem;
   font-size: 1.7rem;
   line-height: 2.5rem;
   font-weight: 300;
@@ -111,7 +98,7 @@
   font-family: $font-stack;
 }
 .bioContainer {
-  width: 55%;
+  // width: 55%;
 }
 #ampersand {
   font-size: 1.8rem;
@@ -127,16 +114,23 @@
     font-size: 1.5rem;
   }
   .aboutMeSection .max-width {
-    max-width: 100rem;
+    max-width: 100%;
   }
   .aboutMeSection .about-content {
-    width: 85rem;
+    // display: flex;
+    // justify-content: center;
+    // flex-direction: row;
+    width: 95%;
+    border: 1px solid rgb(59, 213, 64);
   }
   .myImg {
-    margin-bottom: 7px;
+    // margin-bottom: 7px;
   }
   #mailto {
     font-size: 1.5rem;
+  }
+  .aboutMeSection {
+    max-width: 100%;
   }
 }
 
@@ -157,15 +151,24 @@
     width: 25rem;
   }
   .aboutMeSection .about-content {
-    width: 73rem;
+    // width: 73rem;
+    width: 100%;
   }
   .bioContainer p {
     font-size: 1.5rem;
   }
   .bioContainer {
+    // margin: 5px;
     max-width: 100%;
   }
 }
+
+@media (max-width: 875px) {
+  .aboutMeSection .about-content {
+    flex-direction: column;
+  }
+}
+
 @media (max-width: 670px) {
   .aboutMeHeader {
     max-width: 18rem;
@@ -173,7 +176,11 @@
   }
   .bioContainer {
     max-width: 100%;
-    margin: auto;
+    // margin: 15px;
+    border: 1px solid red;
+    p {
+      font-size: 1.3rem;
+    }
   }
 }
 @media (max-width: 500px) {
@@ -181,6 +188,7 @@
     font-size: 2.1rem;
   }
 }
+
 @media (max-width: 530px) {
   #spanOne,
   #spanTwo,

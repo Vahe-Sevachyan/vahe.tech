@@ -852,13 +852,10 @@ main {
   margin-top: 5rem;
   font-family: "ubuntu", sans-serif, Verdana, Tahoma, Arial, Helvetica;
   margin-bottom: 5.8rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .aboutMeSection .max-width {
-  max-width: 120rem;
+  max-width: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -867,7 +864,6 @@ main {
 .aboutMeSection .about-content {
   width: 105rem;
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
 }
@@ -967,10 +963,6 @@ main {
   font-family: "ubuntu", sans-serif, Verdana, Tahoma, Arial, Helvetica;
 }
 
-.bioContainer {
-  width: 55%;
-}
-
 #ampersand {
   font-size: 1.8rem;
   color: black;
@@ -985,16 +977,17 @@ main {
     font-size: 1.5rem;
   }
   .aboutMeSection .max-width {
-    max-width: 100rem;
+    max-width: 100%;
   }
   .aboutMeSection .about-content {
-    width: 85rem;
-  }
-  .myImg {
-    margin-bottom: 7px;
+    width: 95%;
+    border: 1px solid rgb(59, 213, 64);
   }
   #mailto {
     font-size: 1.5rem;
+  }
+  .aboutMeSection {
+    max-width: 100%;
   }
 }
 @media (max-width: 1104px) {
@@ -1013,13 +1006,18 @@ main {
     width: 25rem;
   }
   .aboutMeSection .about-content {
-    width: 73rem;
+    width: 100%;
   }
   .bioContainer p {
     font-size: 1.5rem;
   }
   .bioContainer {
     max-width: 100%;
+  }
+}
+@media (max-width: 875px) {
+  .aboutMeSection .about-content {
+    flex-direction: column;
   }
 }
 @media (max-width: 670px) {
@@ -1029,7 +1027,10 @@ main {
   }
   .bioContainer {
     max-width: 100%;
-    margin: auto;
+    border: 1px solid red;
+  }
+  .bioContainer p {
+    font-size: 1.3rem;
   }
 }
 @media (max-width: 500px) {
@@ -1082,4 +1083,16 @@ footer {
   filter: brightness(0) invert(1);
   height: 30px;
   width: 36px;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }/*# sourceMappingURL=style.css.map */
