@@ -2,42 +2,50 @@
   margin-top: 5rem;
   font-family: $font-stack;
   margin-bottom: 5.8rem;
+  // border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .aboutMeSection .max-width {
   max-width: 120rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // border: 1px solid black;
 }
 .aboutMeSection .about-content {
+  width: 105rem;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
-  // border: 1px solid red;
+  justify-content: space-around;
 }
 .myImg {
   width: 36%;
+  // margin-top: 15px;
   // border: 1px solid red;
-
-  margin: auto;
+  // margin: auto;
 }
-
 .myImg img {
   height: 35rem;
   width: 38rem;
   object-fit: cover;
   border-radius: 6px;
-  margin-bottom: 80px;
+  // margin-bottom: 80px;
 }
 
 .bioContainer {
-  width: 55%;
+  max-width: 55%;
 }
 
 .bioContainer p {
-  margin-bottom: 2rem;
-  width: 58rem;
+  margin-bottom: 1rem;
+  // width: 55rem;
   font-size: 1.7rem;
   line-height: 2.5rem;
   font-weight: 300;
+  color: #131313;
 }
 .bioContainer p a {
   font-size: 1.7rem;
@@ -72,13 +80,14 @@
   color: dodgerblue;
 }
 .resumeBtn {
+  width: 250px;
   display: inline-block;
   background: $main-color;
   color: #fff;
   font-size: 2rem;
   font-weight: 500;
   padding: 1rem 1.8rem;
-  margin-top: 2rem;
+  margin-top: 6rem;
   border-radius: 5px;
   letter-spacing: 0.1rem;
   border: 2px solid $main-color;
@@ -91,13 +100,13 @@
 .aboutMeHeader {
   border-radius: 5px;
   background-color: $main-color;
-  max-width: 18rem;
+  max-width: 19rem;
   margin: auto;
   padding: 0.5rem;
   color: whitesmoke;
   text-align: center;
   font-size: 3rem;
-  margin-bottom: 6rem;
+  margin-bottom: 4rem;
   font-weight: 400;
   font-family: $font-stack;
 }
@@ -108,32 +117,63 @@
   font-size: 1.8rem;
   color: black;
 }
-@media (max-width: 1104px) {
+
+@media (max-width: 1300px) {
   .myImg img {
     height: 30rem;
     width: 30rem;
   }
+  .bioContainer p {
+    font-size: 1.5rem;
+  }
+  .aboutMeSection .max-width {
+    max-width: 100rem;
+  }
+  .aboutMeSection .about-content {
+    width: 85rem;
+  }
+  .myImg {
+    margin-bottom: 7px;
+  }
+  #mailto {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 1104px) {
   #spanOne,
   #spanTwo,
   #spanThree {
     font-size: 3rem;
   }
 }
+
 @media (max-width: 947px) {
-  .myImg {
-    display: flex;
-    justify-content: center;
-    margin: 0 auto 6rem;
+  #mailto {
+    font-size: 1.4rem;
+  }
+  .myImg img {
+    height: 25rem;
+    width: 25rem;
+  }
+  .aboutMeSection .about-content {
+    width: 73rem;
+  }
+  .bioContainer p {
+    font-size: 1.5rem;
   }
   .bioContainer {
-    width: 100%;
-    margin: auto;
+    max-width: 100%;
   }
 }
 @media (max-width: 670px) {
   .aboutMeHeader {
     max-width: 18rem;
     font-size: 3rem;
+  }
+  .bioContainer {
+    max-width: 100%;
+    margin: auto;
   }
 }
 @media (max-width: 500px) {
