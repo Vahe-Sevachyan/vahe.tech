@@ -7,6 +7,10 @@
   padding: 1.5rem 0rem;
   z-index: 3;
 }
+.navLinks {
+  list-style: none;
+  display: inline-block;
+}
 .navLinks a {
   border: 1.8px solid $main-color;
   color: whitesmoke;
@@ -35,10 +39,7 @@
   font-size: 20px;
   height: 32px;
 }
-.navLinks {
-  list-style: none;
-  display: inline-block;
-}
+
 .navLogo a {
   width: 20px;
   position: relative;
@@ -210,7 +211,7 @@
 // ********WELCOME SECTION********
 @media screen and (max-width: 991px) {
   .max-width {
-    padding: 0 5rem;
+    padding: 0 3rem;
   }
 }
 @media screen and (max-width: 947px) {
@@ -242,16 +243,36 @@
     font-size: 2rem;
   }
 }
+@media (max-width: 875px) {
+  .navLinks a {
+    font-size: 1.5rem;
+    margin-left: 1rem;
+  }
+}
+@media (max-width: 750px) {
+  .navLinks a {
+    font-size: 1.2rem;
+    margin-left: 0.1rem;
+  }
+  .max-width {
+    padding: 0 1rem;
+  }
+  .vgLogo {
+    width: 45px;
+    height: 25px;
+  }
+  .burger-btn {
+    width: 25px;
+    height: 16px;
+  }
+}
 @media screen and (max-width: 660px) {
   .socialIcons i {
     margin-right: 0rem;
   }
-  .navLinks a {
-    margin: 0.5rem 0;
-    font-size: 1.7rem;
-  }
+
   .max-width {
-    padding: 0 2.3rem;
+    padding: 0 1rem;
   }
   .text-1 {
     font-size: 2rem;
@@ -269,12 +290,18 @@
     font-size: 1.8rem;
   }
 }
-@media screen and (max-width: 470px) {
+@media (max-width: 550px) {
   .navLinks a {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
+  .vgLogo {
+    width: 40px;
+    height: 20px;
+  }
+}
+@media screen and (max-width: 470px) {
   .max-width {
-    padding: 0 1.5rem;
+    padding: 0 1rem;
   }
   .text-1 {
     font-size: 2.2rem;
@@ -292,20 +319,19 @@
     font-size: 1.7rem;
   }
 }
-
+@media (max-width: 450px) {
+  .navLinks a {
+    font-size: 0.8rem;
+  }
+}
 @media screen and (max-width: 425px) {
   .arrow {
     margin-left: 0.2rem;
     margin-top: 29rem;
   }
-  .navLinks a {
-    padding: 0.8rem;
-    font-size: 1.4rem;
-  }
 }
 @media screen and (max-width: 400px) {
   .navLinks a {
-    font-size: 1.3rem;
     padding: 0.7rem;
   }
   .text-3 {
@@ -320,13 +346,29 @@
 }
 @media screen and (max-width: 390px) {
   .navLinks a {
-    font-size: 1.1rem;
     padding: 0.6rem;
   }
 }
 @media screen and (max-width: 345px) {
   .navLinks a {
-    font-size: 1rem;
     padding: 0.5rem;
+    font-size: 0.5;
+  }
+  .vgLogo {
+    width: 35px;
+    height: 15px;
+  }
+}
+@media (max-width: 320px) {
+  .navLinks a {
+    font-size: 0.5rem;
+  }
+  .vgLogo {
+    width: 25px;
+    height: 10px;
+  }
+  .burger-btn {
+    width: 20px;
+    height: 12px;
   }
 }
