@@ -868,10 +868,6 @@ main {
   justify-content: space-around;
 }
 
-.myImg {
-  width: 36%;
-}
-
 #mailto {
   font-size: 1.5rem;
 }
@@ -935,7 +931,7 @@ main {
 }
 
 .resumeBtn {
-  width: 250px;
+  width: 240px;
   display: inline-block;
   background: crimson;
   color: #fff;
@@ -947,6 +943,7 @@ main {
   letter-spacing: 0.1rem;
   border: 2px solid crimson;
   transition: all 0.3s ease;
+  text-align: center;
 }
 .resumeBtn:hover {
   color: crimson;
@@ -956,12 +953,12 @@ main {
 .aboutMeHeader {
   border-radius: 5px;
   background-color: crimson;
-  max-width: 19rem;
+  max-width: 25rem;
   margin: auto;
-  padding: 0.5rem;
+  padding: 1rem 1.5rem 1rem 1.5rem;
   color: whitesmoke;
   text-align: center;
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin-bottom: 4rem;
   font-weight: 400;
   font-family: "ubuntu", sans-serif, Verdana, Tahoma, Arial, Helvetica;
@@ -985,13 +982,16 @@ main {
   }
   .aboutMeSection .about-content {
     width: 100%;
-    border: 1px solid rgb(59, 213, 64);
   }
   #mailto {
     font-size: 1.3rem;
   }
   .aboutMeSection {
     max-width: 100%;
+  }
+  .resumeBtn {
+    margin-top: 30px;
+    margin-bottom: -35px;
   }
 }
 @media (max-width: 1104px) {
@@ -1023,12 +1023,17 @@ main {
   .bioContainer {
     max-width: 100%;
   }
+  .resumeBtn {
+    margin-bottom: -30px;
+  }
+  .myImg img {
+    margin-bottom: 35px;
+  }
+  .aboutMeHeader {
+    margin-top: -5px;
+  }
 }
 @media (max-width: 670px) {
-  .aboutMeHeader {
-    max-width: 18rem;
-    font-size: 3rem;
-  }
   .bioContainer {
     max-width: 100%;
   }

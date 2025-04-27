@@ -15,9 +15,10 @@
   align-items: center;
   justify-content: space-around;
 }
-.myImg {
-  width: 36%;
-}
+// .myImg {
+//   width: 50%;
+//   margin: auto;
+// }
 #mailto {
   font-size: 1.5rem;
 }
@@ -70,7 +71,7 @@
   color: dodgerblue;
 }
 .resumeBtn {
-  width: 250px;
+  width: 240px;
   display: inline-block;
   background: $main-color;
   color: #fff;
@@ -82,6 +83,7 @@
   letter-spacing: 0.1rem;
   border: 2px solid $main-color;
   transition: all 0.3s ease;
+  text-align: center;
   &:hover {
     color: $main-color;
     background: none;
@@ -90,12 +92,12 @@
 .aboutMeHeader {
   border-radius: 5px;
   background-color: $main-color;
-  max-width: 19rem;
+  max-width: 25rem;
   margin: auto;
-  padding: 0.5rem;
+  padding: 1rem 1.5rem 1rem 1.5rem;
   color: whitesmoke;
   text-align: center;
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin-bottom: 4rem;
   font-weight: 400;
   font-family: $font-stack;
@@ -119,7 +121,7 @@
   }
   .aboutMeSection .about-content {
     width: 100%;
-    border: 1px solid rgb(59, 213, 64);
+    // border: 1px solid rgb(59, 213, 64);
     // padding: 5px;
   }
   #mailto {
@@ -127,6 +129,10 @@
   }
   .aboutMeSection {
     max-width: 100%;
+  }
+  .resumeBtn {
+    margin-top: 30px;
+    margin-bottom: -35px;
   }
 }
 
@@ -152,9 +158,6 @@
   .bioContainer p {
     font-size: 1.5rem;
   }
-  .bioContainer {
-    // max-width: 100%;
-  }
 }
 
 @media (max-width: 875px) {
@@ -164,17 +167,21 @@
   .bioContainer {
     max-width: 100%;
   }
+  .resumeBtn {
+    margin-bottom: -30px;
+  }
+  .myImg img {
+    margin-bottom: 35px;
+    // border: 1px solid black;
+  }
+  .aboutMeHeader {
+    margin-top: -5px;
+  }
 }
 
 @media (max-width: 670px) {
-  .aboutMeHeader {
-    max-width: 18rem;
-    font-size: 3rem;
-  }
   .bioContainer {
     max-width: 100%;
-    // margin: 15px;
-    // border: 1px solid red;
     p {
       font-size: 1.3rem;
     }
@@ -188,7 +195,6 @@
     font-size: 2.1rem;
   }
 }
-
 @media (max-width: 530px) {
   #spanOne,
   #spanTwo,
