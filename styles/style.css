@@ -296,6 +296,8 @@ html {
 @media screen and (max-width: 660px) {
   .socialIcons i {
     margin-right: 0rem;
+    margin-bottom: 5px;
+    font-size: 3rem;
   }
   .max-width {
     padding: 0 1rem;
